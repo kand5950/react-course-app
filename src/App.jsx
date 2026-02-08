@@ -2,8 +2,8 @@
 import './App.css'
 
 //COMPONENT = Function that returns JSX
-function Greeting(){
-  return <h1>Hello, I am Pedro!</h1>
+function Greeting({name, age}){
+  return <h1>Hello, I am {name}, I am {age} years old</h1>
 }
 
 function App() {
@@ -12,10 +12,10 @@ function App() {
   // const age = 24;
 
   return <div>
-    <Greeting />
-    <Greeting />
-    <Greeting />
-    <Greeting />
+    <Greeting name={"Pedro"} age={24}/>
+    <Greeting name={"Jack"}/>
+    <Greeting name={"Jess"}/>
+    <Greeting name={"Bane"}/>
     </div>;
 }
 
