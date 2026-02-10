@@ -7,21 +7,12 @@ function Greeting({name, age}){
 }
 
 function App() {
-
-  // const name = getName();
-  // const age = 24;
+  const showGreeting = false;
 
   return <div>
-    <Greeting name={"Pedro"} age={24}/>
-    <Greeting name={"Jack"}/>
-    <Greeting name={"Jess"}/>
-    <Greeting name={"Bane"}/>
+    {showGreeting ? (<Greeting name={"Pedro"} age={24}/>) : (<button>Click Me</button>)}
     </div>;
 }
-
-// function getName() {
-//   return "Jake"
-// }
 
 
 
